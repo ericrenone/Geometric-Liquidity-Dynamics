@@ -1,4 +1,4 @@
-# Financial Logic & Utility
+# Logic & Utility
 
 ## 1. Geometric Price Discovery
 Traditional models exhibit numerical drift under high volatility. This engine uses **Symplectic Integration** to maintain price evolution on the information manifold.
