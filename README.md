@@ -1,24 +1,24 @@
-# Emergent Dynamics for AI/ML Multi-Node Systems
+# Financial Logic & Utility
 
-## Core
-- **Dynamic force/load distribution** across multiple nodes  
-- **Elastic response** and node-level adaptability  
-- **Pseudo-attention weighting**, highlighting critical nodes  
-- **Smooth, real-time 3D visualization** of node dynamics  
-- **Quantitative final summary** of forces and attention  
+## 1. Geometric Price Discovery
+Traditional models exhibit numerical drift under high volatility. This engine uses **Symplectic Integration** to maintain price evolution on the information manifold.
 
+- Price (`q`) deviates toward equilibrium (`Target`) according to **Manifold Stiffness** (`k`), generating mean-reverting oscillations consistent with observed asset behavior.
 
-## Features
+## 2. Momentum-Based Risk Management
+Liquidity momentum is represented by `p`. Extreme events (e.g., flash crashes, short squeezes) cause momentum spikes.
 
-- **3D Real-Time Visualization:**  
-  - **X-axis:** Node index  
-  - **Y-axis:** Simulation timestep  
-  - **Z-axis:** Dynamic force  
-  - Node **size** scales with attention weight  
-  - Node **color** scales with force magnitude (viridis colormap)  
+- **Hard Momentum Clipping** (`±20`) enforces **Market Depth Limits**, preventing unbounded price changes and broken trades.
 
-- **Dynamic Adjustment:** Elasticity-modulated forces for realistic system response.  
-- **Attention Mechanism:** Normalized weights representing node importance.  
-- **Optimized Rendering:** In-place updates for smooth, flicker-free animation.  
-- **Summary Output:** Prints final node forces, attention, and applied safety factor.  
+## 3. Deterministic Stress Testing
+A **Master Seed** converts stochastic noise into a deterministic, reproducible sequence.
 
+- **Backtesting:** 1,000 market scenarios generated via seed variation.  
+- **Reproducibility:** Specific failure states can be recreated to calibrate `k` and `p`.
+
+## 4. Quantitative Performance Metrics
+The engine computes key risk metrics:
+
+- **Annualized Volatility:** Standard deviation of returns scaled to a trading year.  
+- **Max Drawdown (MDD):** Largest peak-to-trough capital decline.  
+- **Symplectic Stability:** Verification of long-horizon numerical stability (1,000+ rounds).
